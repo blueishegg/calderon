@@ -1,7 +1,22 @@
 import isra from "./isra.svg";
 import "./App.css";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [data, setData] = useState();
+  const fetchData = async function () {
+    const response = await fetch("http://localhost:1234/");
+    setData(await response.json());
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  console.log(data);
+  // console.log("-----HELLO-----");
+  // fetch("http://localhost:1234/")
+  //   .then((res) => res.json())
+  //   .then((data) => console.log(data.payload[1].forename));
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +30,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          CALDERON WEBSITE
+          calderon
         </a>
       </header>
     </div>
