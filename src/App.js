@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(data);
+  console.log(data.payload[1].forename);
   // console.log("-----HELLO-----");
   // fetch("http://localhost:1234/")
   //   .then((res) => res.json())
