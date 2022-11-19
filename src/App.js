@@ -56,7 +56,11 @@ function App() {
       <div>
         {users &&
           users.map((user) => {
-            return <p key={users._id}>{user.full_name}</p>;
+            return (
+              <p key={users._id}>
+                {user.full_name} {user.description}
+              </p>
+            );
           })}
       </div>
     </div>
