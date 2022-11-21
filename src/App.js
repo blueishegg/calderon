@@ -23,20 +23,6 @@ function App() {
     fetchData();
   }, []);
 
-  // const [data, setData] = useState();
-  // const fetchData = async function () {
-  //   const response = await fetch("http://localhost:1234/");
-  //   setData(await response.json());
-  // };
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
-  // console.log(data.payload[1].forename);
-  // console.log("-----HELLO-----");
-  // fetch("http://localhost:1234/")
-  //   .then((res) => res.json())
-  //   .then((data) => console.log(data.payload[1].forename));
   return (
     <div className="App">
       <header className="App-header">
