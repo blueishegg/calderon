@@ -1,0 +1,16 @@
+.profileContainer {
+  border: 2px solid green;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.nameTag {
+  border: 2px blue solid;
+  background-color: #ffe747;
+  width: 30vh;
+  height: 10vh;
+  grid-column-start: 4;
+}
+
+.profilePic {
+  grid-column-start: 2;
+}

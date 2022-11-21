@@ -1,0 +1,27 @@
+.container {
+  /* border: 2px solid red; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  width: 50em;
+}
+
+.tab {
+  /* border: 2px green solid; */
+  height: auto;
+  width: 10vh;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tab:hover {
+  text-decoration: underline;
+}
+
+.israNav {
+  width: 10vh;
+}

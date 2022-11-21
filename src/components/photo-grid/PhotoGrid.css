@@ -1,0 +1,12 @@
+.photoGridContainer {
+  /* border: 2px red solid; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photo {
+  /* border: 2px solid green; */
+  width: 50vh;
+  height: 30vh;
+  object-fit: cover;
+}
