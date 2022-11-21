@@ -2,30 +2,37 @@ import isra from "./isra.svg";
 import "./App.css";
 import { useState, useEffect } from "react";
 import * as Realm from "realm-web";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Landing from "./pages/Landing";
 
 function App() {
   //-----CONNECTING TO MONGODB----
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    async function fetchData() {
-      const REALM_APP_ID = process.env.REACT_APP_CALDERON_MONGO;
-      const app = new Realm.App({ id: REALM_APP_ID });
-      const credentials = Realm.Credentials.anonymous();
-      try {
-        const user = await app.logIn(credentials);
-        const allUsers = await user.functions.getAllUsers();
-        setUsers(allUsers);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const REALM_APP_ID = process.env.REACT_APP_CALDERON_MONGO;
+  //     const app = new Realm.App({ id: REALM_APP_ID });
+  //     const credentials = Realm.Credentials.anonymous();
+  //     try {
+  //       const user = await app.logIn(credentials);
+  //       const allUsers = await user.functions.getAllUsers();
+  //       setUsers(allUsers);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   }
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="App">
-      <header className="App-header">
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+      {/* <header className="App-header">
         <img src={isra} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -48,7 +55,7 @@ function App() {
               </p>
             );
           })}
-      </div>
+      </div> */}
     </div>
   );
 }
