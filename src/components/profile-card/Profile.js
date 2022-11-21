@@ -5,10 +5,10 @@ export default function Profile({ photo, name }) {
   return (
     <div className="profileContainer">
       <div className="nameTag">
-        <h2>{name}</h2>
+        <h2 className="nameText">{name}</h2>
       </div>
       <img src={photo} alt="Israel Calderon" className="profilePic" />
-      <div>
+      <div className="profileDescription">
         <p>
           The first born and creator of this project. The objective of this
           platform is to showcase my abilities as a software engineer and a
