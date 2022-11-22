@@ -2,6 +2,7 @@
   /* border: 2px red solid; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-top: 2em;
 }
 
 .photo {

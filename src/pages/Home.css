@@ -9,6 +9,8 @@
 h1 {
   color: #ffffff;
   font-family: "Noto Sans JP", sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .homepage-profiles {
   background-color: #ffffff;

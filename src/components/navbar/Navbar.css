@@ -5,6 +5,7 @@
   align-items: center;
   grid-template-columns: repeat(5, 1fr);
   width: 50em;
+  padding-top: 2em;
 }
 
 .tab {

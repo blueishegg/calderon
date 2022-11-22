@@ -15,10 +15,10 @@ export default function Navbar() {
       <Link className="tab" to="/">
         <img className="israNav" src={isra} alt="isra-icon" />
       </Link>
-      <Link className="tab" to="blog">
+      <Link className="tab" to="/blog">
         BLOG
       </Link>
-      <Link className="tab" to="family">
+      <Link className="tab" to="/family">
         FAMILY
       </Link>
     </div>
