@@ -14,7 +14,9 @@ export default function PhotoGrid() {
   return (
     <div className="photoGridContainer">
       {photos.map((photo) => {
-        return <img src={photo} alt="photo_in_grid" className="photo" />;
+        return (
+          <img key={photo} src={photo} alt="photo_in_grid" className="photo" />
+        );
       })}
     </div>
   );
